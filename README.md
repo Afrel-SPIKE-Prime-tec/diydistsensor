@@ -13,6 +13,10 @@ LEGO(R) Spike Prime用のDistance Sensorとして認識される自作のセン�
 
 ・ジャンパーワイヤー
 
+![schematics](https://user-images.githubusercontent.com/5597377/125695572-3fb3916c-404d-4c72-a56d-56e97b7f7dd8.png)
+
+USBから給電する場合
+
 ## Movie
 
 https://www.youtube.com/watch?v=nrUqzKnPLQo
