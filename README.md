@@ -8,6 +8,10 @@ LEGO(R) Spike Prime用のDistance Sensorとして認識される自作のセン�
 
 Seeeduino XAIO(Arduino IDE)で動作します。
 
+## Movie
+
+https://www.youtube.com/watch?v=nrUqzKnPLQo
+
 ## プロトコル
 (1)接続
 
