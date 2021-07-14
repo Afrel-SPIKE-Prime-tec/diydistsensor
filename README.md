@@ -7,7 +7,7 @@ LEGO(R) Spike Prime用のDistance Sensorとして認識される自作のセン�
 1～9のダミーデータを返します。
 
 ## 材料
-・Seeeduino XAIO
+・Seeeduino Xiao
 
 ・SPIKE Hub用カードエッジコネクタ　https://github.com/Afrel-SPIKE-Prime-tec/spikeconnector
 
