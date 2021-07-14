@@ -1,4 +1,4 @@
-// DIY Distance sensor(LEGO SPIKE prime)
+// DIY Distance Sensor(LEGO SPIKE prime)
 // for Seeeduino XAIO
 // by takuya matsubara
 
@@ -8,13 +8,13 @@
 // https://www.philohome.com/wedo2reverse/protocol.htm
 
 // Seeeduino XAIO : SPIKE(WeDo2.0) connector 
-// (12)GND ---- (3)GND
-// (6)TX   ---> (6)Device to Hub
-// (7)RX   <--- (5)Hub to Device
+//   GND   ---- (3)GND
+// (D6)TX  ---> (6)Device to Hub
+// (D7)RX  <--- (5)Hub to Device
 #define GPIOTX 6    // GPIO pin:TX
 #define GPIORX 7    // GPIO pin:RX
 
-#define DEBUG 1
+#define DEBUG 1 // 1=ON / 0=OFF
 
 void sensor_init(void);
 void sensor_control(void);
