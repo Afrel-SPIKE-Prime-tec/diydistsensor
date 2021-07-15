@@ -18,13 +18,13 @@ LEGO(R) Spike Prime用のDistance Sensorとして認識される自作のセン�
 
 以下の回路図の通りに接続します(USBから給電する場合)。Seeeduino XiaoかM5StickCかによって接続方法が違います。
 
-![schematics](https://user-images.githubusercontent.com/5597377/125725409-42129410-d908-46f4-9ece-034bc2fc9438.png)
+![schematics](https://user-images.githubusercontent.com/5597377/125727769-7025dcfb-4826-4344-9406-95c480ccffe4.png)
 
-Arduino IDEを使って、ソースコードを開きます
+・Arduino IDEを使って、ソースコードを開きます
 
-M5StickCの場合はソースコード内の「#define M5STICKC」の値を1に変更します。
+・M5StickCの場合はソースコード内の「#define M5STICKC」の値を1に変更します。
 
-プログラムを書き込み＆実行します。
+・ソースコードのコンパイル＆書き込みます。
 
 ## Movie
 
