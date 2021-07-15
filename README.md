@@ -39,5 +39,7 @@ Hub→Sensorにコマンド送信。Sensor→Hubへレスポンス返信。返�
 
 ## 参考資料
 https://github.com/sonoisa/cheese/
+
 https://github.com/ahmedjouirou/legopup_arduino
+
 https://www.philohome.com/wedo2reverse/protocol.htm
