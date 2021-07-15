@@ -1,5 +1,5 @@
 // DIY Distance Sensor(LEGO SPIKE prime)
-// for Seeeduino XIAO
+// for Seeeduino XIAO/M5StickC
 // by takuya matsubara
 
 // Reference Data
@@ -7,14 +7,25 @@
 // https://github.com/ahmedjouirou/legopup_arduino
 // https://www.philohome.com/wedo2reverse/protocol.htm
 
+#define DEBUG 1     // 1=ON / 0=OFF
+#define M5STICKC 0  // 1=ON(M5StickC) / 0=OFF(seeeduino XIAO)
+
+#if M5STICKC
+  #include <M5StickC.h>
+// M5StickC Extention port:SPIKE(WeDo2.0) connector
+// GND  ---- (3)GND
+// G26  ---> (6)Device to Hub
+// G36  <--- (5)Hub to Device
+  #define GPIOTX 26   // GPIO pin:TX
+  #define GPIORX 36   // GPIO pin:RX
+#else
 // Seeeduino XIAO : SPIKE(WeDo2.0) connector 
 //   GND   ---- (3)GND
 // (D6)TX  ---> (6)Device to Hub
 // (D7)RX  <--- (5)Hub to Device
-#define GPIOTX 6    // GPIO pin:TX
-#define GPIORX 7    // GPIO pin:RX
-
-#define DEBUG 1 // 1=ON / 0=OFF
+  #define GPIOTX 6    // GPIO pin:TX
+  #define GPIORX 7    // GPIO pin:RX
+#endif
 
 void sensor_init(void);
 void sensor_control(void);
@@ -111,6 +122,10 @@ void debug_message(char *ptr)
   return;
 #endif
   Serial.println(ptr);
+#if M5STICKC
+  M5.Lcd.setCursor(0, 0);
+  M5.Lcd.print(ptr);  // error
+#endif
 }
 
 //--------------
@@ -262,7 +277,11 @@ void sensor_start(void)
   }
   debug_message("connect");
   // success
+#if M5STICKC
+  Serial1.begin(115200, SERIAL_8N1,GPIORX,GPIOTX);
+#else
   Serial1.begin(115200);
+#endif
   delay(5);
 }
 
@@ -322,6 +341,12 @@ void sensor_control(void)
 
 //--------------
 void setup() {
+#if M5STICKC
+  M5.begin();
+  M5.Lcd.setRotation(3);  // 画面の向きを設定
+  M5.Lcd.setTextSize(2);  // 文字サイズを設定
+  M5.Lcd.setTextColor(WHITE, BLACK);  
+#endif
   sensor_init();
 }
 
@@ -329,4 +354,3 @@ void setup() {
 void loop() {
   sensor_control();
 }
-  
