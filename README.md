@@ -1,22 +1,30 @@
 # diydistsensor
 
 ![diydistsensor](https://user-images.githubusercontent.com/5597377/125673593-851458ac-01b9-4ab9-953b-776fc8dae487.jpg)
-![schematics](https://user-images.githubusercontent.com/5597377/125725409-42129410-d908-46f4-9ece-034bc2fc9438.png)
+![m5stickc](https://user-images.githubusercontent.com/5597377/125725713-0e166bc3-a5ad-4e03-8664-7caa427dabba.jpg)
 
 ## 概要
 LEGO(R) Spike Prime用のDistance Sensorとして認識される自作のセンサーです。
 1～9のダミーデータを返します。
 
 ## 材料
-・Seeeduino Xiao/M5StickC
+・Seeeduino Xiao 、M5StickCのどちらか。
 
 ・SPIKE Hub用カードエッジコネクタ　https://github.com/Afrel-SPIKE-Prime-tec/spikeconnector
 
 ・ジャンパーワイヤー
 
-## 回路図(USBから給電する場合)
+## 組み立てと実行
 
-![schematics](https://user-images.githubusercontent.com/5597377/125700218-60866e66-431d-4ab3-ae54-b6ac945de928.png)
+以下の回路図の通りに接続します(USBから給電する場合)。Seeeduino XiaoかM5StickCかによって接続方法が違います。
+
+![schematics](https://user-images.githubusercontent.com/5597377/125725409-42129410-d908-46f4-9ece-034bc2fc9438.png)
+
+Arduino IDEを使って、ソースコードを開きます
+
+M5StickCの場合はソースコード内の「#define M5STICKC」の値を1に変更します。
+
+プログラムを書き込み＆実行します。
 
 ## Movie
 
