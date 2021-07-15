@@ -18,7 +18,7 @@ LEGO(R) Spike Prime用のDistance Sensorとして認識される自作のセン�
 
 ## Movie
 
-https://www.youtube.com/watch?v=nrUqzKnPLQo
+https://www.youtube.com/watch?v=j6FGpP5RkfA
 
 ## プロトコル
 ### (1)接続
