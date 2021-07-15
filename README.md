@@ -36,3 +36,8 @@ Hub→Sensorに0x04が送信されたら、成功。以後、ボーレートを1
 ### (4)コマンド受信＆レスポンス返信
 Hub→Sensorにコマンド送信。Sensor→Hubへレスポンス返信。返信後、(4)を繰り返す。
 一定時間コマンドが到着しない場合はエラーとして、(1)へ戻る。
+
+## 参考資料
+https://github.com/sonoisa/cheese/
+https://github.com/ahmedjouirou/legopup_arduino
+https://www.philohome.com/wedo2reverse/protocol.htm
