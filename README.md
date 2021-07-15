@@ -1,13 +1,14 @@
 # diydistsensor
 
 ![diydistsensor](https://user-images.githubusercontent.com/5597377/125673593-851458ac-01b9-4ab9-953b-776fc8dae487.jpg)
+![schematics](https://user-images.githubusercontent.com/5597377/125725409-42129410-d908-46f4-9ece-034bc2fc9438.png)
 
 ## 概要
 LEGO(R) Spike Prime用のDistance Sensorとして認識される自作のセンサーです。
 1～9のダミーデータを返します。
 
 ## 材料
-・Seeeduino Xiao
+・Seeeduino Xiao/M5StickC
 
 ・SPIKE Hub用カードエッジコネクタ　https://github.com/Afrel-SPIKE-Prime-tec/spikeconnector
 
